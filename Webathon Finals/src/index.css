@@ -1,0 +1,273 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    transition: 2ms;
+    /* outline: solid 1px; */
+}
+
+body {
+    background-color: white;
+    /* height: 150vh; */
+    font-family: sans-serif;
+    font-size: 15px;
+    color: gray;
+    display: flex;
+    flex-direction: column;
+}
+
+.flex-row {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.flex-col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.head1 {
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    height: 90px;
+    background-color: white;
+    justify-content: space-between;
+    z-index: 100;
+    /* box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.527); */
+    border-bottom: 1px solid;
+}
+
+.head2 {
+    position: relative;
+    background-color: white;
+    top: 88px;
+    /* bottom: 0px; */
+    height: 50px;
+    width: inherit;
+    box-shadow: 0px 1px 8px rgba(0, 0, 0, 0.527);
+
+}
+
+.head2-wrapper {
+    height: inherit;
+    width: 80vw;
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+.head1-nav-links {
+    width: 90vw;
+    margin-right: 10px;
+    margin-left: 10px;
+    justify-content: space-between;
+
+}
+
+.logo {
+    width: 100px;
+    margin-left: 10px;
+    margin-right: 0px
+}
+
+.search {
+    justify-content: space-evenly;
+    border: solid 1px black;
+    width: 40vw;
+    border-radius: 50px;
+}
+
+.search>* {
+    margin-right: auto;
+    margin-left: 20px;
+}
+
+#search-bar {
+    border: none;
+    background-color: inherit;
+    height: 50px;
+    width: calc(40vw - 10px);
+    font: 16px sans-serif;
+}
+
+#search-bar:focus {
+    border: none;
+    outline: none;
+}
+
+.links {
+    text-decoration: none;
+    color: black;
+}
+
+.links:hover {
+    color: purple;
+}
+
+.ico {
+    width: 30px;
+    aspect-ratio: 1;
+    padding: 4px;
+    border-radius: 30px;
+}
+
+.ico:hover,
+.ico:focus {
+    background-color: rgba(212, 0, 255, 0.461);
+}
+
+.head-link-bar {
+    width: 25vw;
+    justify-content: space-evenly;
+}
+
+.head-icon-account {
+    width: 15vw;
+    margin-right: 10px;
+    justify-content: space-around;
+}
+
+#account {
+    background-color: rgb(40, 0, 40);
+    color: azure;
+    font-weight: bold;
+    width: 35px;
+    aspect-ratio: 1/1;
+    border-radius: 30px;
+    outline: solid 3px rgb(255, 0, 153);
+}
+
+main {
+    /* outline: solid 1px; */
+    position: relative;
+    top: 100px;
+    width: 80vw;
+    /* left: 0px; */
+    margin: auto;
+}
+
+#banner {
+    width: 80vw;
+    /* display: none; */
+}
+
+.navig {
+    width: 35px;
+    aspect-ratio: 1;
+    border-radius: 50px;
+    border: none;
+    font-weight: bold;
+    color: aliceblue;
+    background-color: rgb(43, 43, 43);
+    /* outline: solid 3px rgba(43, 27, 27, 0.245); */
+    box-shadow: 2px 4px 25px -5px rgba(0, 0, 0, 1);
+}
+
+#ban-right {
+    position: absolute;
+    float: right;
+    right: 5%;
+    top: 20vh;
+}
+
+#ban-left {
+    position: absolute;
+    float: right;
+    left: 5%;
+    top: 20vh;
+}
+
+.card {
+    /* font-family: ; */
+    color: black;
+    position: absolute;
+    top: 10vh;
+    width: 25vw;
+    float: left;
+    left: 10%;
+    padding: 15px 20px 15px 20px;
+    /* aspect-ratio: 2.75; */
+    height: 200px;
+    background-color: white;
+    font-size: 16px;
+    font-weight: 100;
+    box-shadow: 0px 1px 10px 1px rgba(0, 0, 0, 0.183);
+    justify-content: space-around;
+}
+
+.sec-1 {
+    display: flex;
+    margin-top: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+.headline-text {
+    color: black;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 35px;
+}
+
+.pic-bar-round {
+    width: 100px;
+    aspect-ratio: 1;
+    border-radius: 100px;
+}
+
+.pic-bar {
+    margin: auto;
+    width: 50vw;
+    height: 300px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.pic-bar-round:hover,
+.pic-bar-round:focus {
+    transition: 0.7s;
+    width: 140px;
+    outline: 4px solid greenyellow;
+}
+
+.pic-bar-round:focus::after {
+    transition: 0.8s;
+}
+
+.go {
+    width: 150px;
+    height: 40px;
+    border: none;
+    background-color: black;
+    color: white;
+    font: 15px 'Franklin Gothic Medium';
+
+}
+
+.go:focus,
+.go:hover {
+    transition: 0.8s;
+    width: 170px;
+    height: 45px;
+    background-color: white;
+    color: black;
+    font-size: 25px;
+    outline: 3px solid black;
+
+}
+
+footer {
+    background-color: #181D31;
+    margin-top: 150px;
+    height: 100px;
+    color: aliceblue;
+}
+
+footer>p>a {
+    color: aqua
+}
